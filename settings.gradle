@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidStarter"
 include ':app'
+include ':domain'
