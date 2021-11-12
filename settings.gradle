@@ -7,6 +7,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidStarter"
+include ':core'
+include ':features'
 include ':app'
 include ':domain'
 include ':data'
+include ':features:initializer'
+include ':core:navigation'
