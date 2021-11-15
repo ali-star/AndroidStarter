@@ -19,7 +19,7 @@ fun Navigation(navHostController: NavHostController) {
         }
         composable(route = Destinations.LOGIN) {
             Login {
-                navHostController.navigate(Destinations.HOME)π
+                navHostController.navigate(Destinations.HOME)
             }
         }
         composable(route = Destinations.HOME) {
