@@ -1,16 +1,12 @@
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
-    }
-}
 rootProject.name = "AndroidStarter"
+include ':app'
 include ':core'
 include ':features'
-include ':app'
 include ':domain'
 include ':data'
 include ':features:initializer'
-include ':core:navigation'
+include ':features:home'
+include ':libraries:navigation'
+include ':libraries:core'
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
