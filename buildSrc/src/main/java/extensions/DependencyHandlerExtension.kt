@@ -35,8 +35,38 @@ fun DependencyHandler.addComposeDependencies() {
     androidTestImplementation(Deps.compose.manifest)
 }
 
+/**
+ * Adds the Test dependencies on Gradle.
+ */
+fun DependencyHandler.addTestDependencies() {
+    testImplementation(Deps.test.junit)
+    testImplementation(Deps.test.mockk)
+    testImplementation(Deps.test.robolectric)
+    testImplementation(Deps.test.junitExt)
+    testImplementation(Deps.test.runner)
+    testImplementation(Deps.test.core)
+    testImplementation(Deps.test.espresso)
+    testImplementation(Deps.test.composeJunit4)
+
+    androidTestImplementation(Deps.test.junit)
+    androidTestImplementation(Deps.test.runner)
+    androidTestImplementation(Deps.test.core)
+    androidTestImplementation(Deps.test.espresso)
+    androidTestImplementation(Deps.test.mockk)
+    androidTestImplementation(Deps.test.robolectricAnnotations)
+    androidTestImplementation(Deps.test.composeJunit4)
+
+    debugImplementation(Deps.test.composeJunit4)
+}
+
 private fun DependencyHandler.implementation(dependencyNotation: String): Dependency? =
     add("implementation", dependencyNotation)
+
+private fun DependencyHandler.debugImplementation(dependencyNotation: String): Dependency? =
+    add("debugImplementation", dependencyNotation)
+
+private fun DependencyHandler.testImplementation(dependencyNotation: Any): Dependency? =
+    add("testImplementation", dependencyNotation)
 
 private fun DependencyHandler.androidTestImplementation(dependencyNotation: Any): Dependency? =
     add("androidTestImplementation", dependencyNotation)

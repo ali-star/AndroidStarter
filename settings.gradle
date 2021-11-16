@@ -1,6 +1,5 @@
 rootProject.name = "AndroidStarter"
 include ':app'
-include ':core'
 include ':features'
 include ':domain'
 include ':data'
@@ -10,3 +9,4 @@ include ':libraries:navigation'
 include ':libraries:core'
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include ':libraries:test'
