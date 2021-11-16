@@ -1,3 +1,5 @@
+import extensions.addTestDependencies
+
 plugins {
     id(GradlePlugin.ANDROID_LIBRARY)
     id(GradlePlugin.COMPOSE)
@@ -5,4 +7,6 @@ plugins {
 
 dependencies {
     implementation(projects.domain)
+
+    androidTestImplementation(projects.libraries.test)
 }

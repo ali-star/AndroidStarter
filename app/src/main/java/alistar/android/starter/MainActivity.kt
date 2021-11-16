@@ -1,7 +1,7 @@
 package alistar.android.starter
 
 import alistar.android.starter.navigation.Navigation
-import alistar.android.starter.ui.theme.AndroidStarterTheme
+import alistar.android.starter.libraries.core.ui.theme.AndroidStarterTheme
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
