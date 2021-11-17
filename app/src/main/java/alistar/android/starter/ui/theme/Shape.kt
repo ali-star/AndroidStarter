@@ -1,4 +1,4 @@
-package alistar.android.starter.libraries.core.ui.theme
+package alistar.android.starter.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

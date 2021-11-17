@@ -1,5 +1,6 @@
 import extensions.addComposeConfig
 import extensions.addComposeDependencies
+import extensions.addTestDependencies
 
 plugins {
     id(GradlePlugin.ANDROID_APPLICATION)
@@ -68,4 +69,7 @@ dependencies {
     kapt(Deps.hilt.compiler)
 
     addComposeDependencies()
+
+    addTestDependencies()
+    androidTestImplementation(projects.libraries.test)
 }

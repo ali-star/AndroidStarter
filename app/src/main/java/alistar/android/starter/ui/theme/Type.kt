@@ -1,4 +1,4 @@
-package alistar.android.starter.libraries.core.ui.theme
+package alistar.android.starter.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

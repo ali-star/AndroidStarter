@@ -56,7 +56,7 @@ fun DependencyHandler.addTestDependencies() {
     androidTestImplementation(Deps.test.robolectricAnnotations)
     androidTestImplementation(Deps.test.composeJunit4)
 
-    debugImplementation(Deps.test.composeJunit4)
+    debugImplementation(Deps.test.composeUiTestManifest)
 }
 
 private fun DependencyHandler.implementation(dependencyNotation: String): Dependency? =

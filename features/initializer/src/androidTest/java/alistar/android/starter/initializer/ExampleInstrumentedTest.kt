@@ -6,11 +6,9 @@ import alistar.android.starter.libraries.test.dsl.GIVEN
 import alistar.android.starter.libraries.test.dsl.RUN_UI_TEST
 import alistar.android.starter.libraries.test.dsl.THEN
 import alistar.android.starter.libraries.test.dsl.WHEN
-import androidx.activity.ComponentActivity
 import androidx.compose.material.MaterialTheme
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.junit4.AndroidComposeTestRule
-import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.junit4.*
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -22,7 +20,7 @@ import org.junit.Rule
 class ExampleInstrumentedTest {
 
     @get:Rule
-    val composeTestRule = createAndroidComposeRule<ComponentActivity>()
+    val composeTestRule = createComposeRule()
 
     private val robot = Robot(composeTestRule)
 
@@ -36,7 +34,7 @@ class ExampleInstrumentedTest {
     }
 }
 
-class Robot(private val composeTestRule: AndroidComposeTestRule<*, *>): BaseRobot() {
+class Robot(private val composeTestRule: ComposeContentTestRule): BaseRobot() {
 
     fun createGetStartedScreen() {
         composeTestRule.setContent {

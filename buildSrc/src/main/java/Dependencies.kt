@@ -86,7 +86,7 @@ object TestDeps {
     const val runner = "androidx.test:runner:${Versions.testRunner}"
     const val core = "androidx.test:core:${Versions.testCore}"
     const val composeJunit4 = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
-    const val composeTest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
+    const val composeUiTestManifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
     const val coreKtx = "androidx.test:core-ktx:${Versions.testCore}"
     const val uiAutomator = "androidx.test.uiautomator:uiautomator:${Versions.testUiAutomator}"
     const val junitExt = "androidx.test.ext:junit:${Versions.testJunitExt}"
